@@ -384,7 +384,7 @@ footer .fab a {
   }
   header .topnav a.icon .fa {
     position: relative;
-    top: 5px;
+    top: 7px;
   }
   header .topnav a.icon .fa-close {
     display: none;
@@ -405,7 +405,7 @@ footer .fab a {
   }
   header .topnav.responsive a.icon .fa {
     position: relative;
-    top: 5px;
+    top: 7px;
     left: 1rem;
   }
   header .topnav.responsive a.icon .fa-close {
@@ -413,6 +413,10 @@ footer .fab a {
   }
   header .topnav.responsive a.icon .fa-bars {
     display: none;
+  }
+  header .topnav.responsive a.icon .fa-bars:before {
+    display: relative;
+    top: 4px;
   }
   header .topnav.responsive a {
     float: none;
@@ -459,6 +463,7 @@ footer .fab a {
   }
   #hero .hero-content-a {
     display: inline-block;
+    padding-right: 0;
   }
   #hero .hero-content-a .btn {
     display: inline-block;
@@ -476,6 +481,14 @@ footer .fab a {
   }
   #usp .usp-content .usp-card p {
     font-size: 16px;
+  }
+  #testimonials .large-line {
+    width: 70%;
+    left: 0;
+  }
+  #testimonials .small-line {
+    width: 45%;
+    left: 10%;
   }
   #buy-now .buy-now-container {
     display: inline-block;
