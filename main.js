@@ -74,6 +74,10 @@ function myFunction() {
   }
 }
 
+$(".nav-link").click(function () {
+  $("#myTopnav.responsive").removeClass("responsive");
+});
+
 // Scroll to top button
 //Get the button
 var mybutton = document.getElementById("tothetop");
