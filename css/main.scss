@@ -1,0 +1,361 @@
+// Resets
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 5%;
+}
+
+.container-2 {
+  padding: 2% 5%;
+}
+
+// Utilities
+
+span {
+  color: #62c29f;
+}
+
+.large-line {
+  margin: auto;
+  position: relative;
+  left: 70px;
+  background: #62c29f;
+  margin-top: 1rem;
+  height: 4px;
+  width: 160px;
+}
+
+.small-line {
+  margin: auto;
+  position: relative;
+  left: 80px;
+  background: #62c29f;
+  margin-top: 1rem;
+  height: 4px;
+  width: 120px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.lead-italic {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: #868686;
+  font-style: italic;
+  padding-bottom: 0.75rem;
+}
+
+.lead-bold {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #292929;
+  padding-bottom: 0.75rem;
+}
+
+.btn {
+  background: #62c29f;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  &:hover {
+    color: #fff;
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+}
+
+// Header
+header {
+  z-index: 2;
+
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    .logo {
+      height: 65px;
+      float: left;
+    }
+
+    background-color: #fff;
+    overflow: hidden;
+
+    .icon {
+      display: none;
+      color: #fff;
+    }
+
+    a {
+      float: left;
+      display: block;
+      color: #292929;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+
+      &:hover {
+        background: #62c29f;
+        color: #fff;
+      }
+
+      &.active:hover {
+        color: #fff;
+      }
+
+      &.active {
+        color: #62c29f;
+      }
+    }
+  }
+}
+
+// Hero
+
+#hero {
+  padding-top: 100px;
+  height: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    &-a {
+      max-width: 450px;
+      height: 100%;
+      padding-right: 2rem;
+
+      img {
+        max-width: 100%;
+        padding: 1rem;
+      }
+
+      .btn {
+        display: none;
+      }
+    }
+
+    &-b {
+      max-width: 450px;
+      height: 100%;
+      padding-top: 50px;
+      padding-left: 2rem;
+
+      h4 {
+        color: #292929;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        padding-bottom: 0.75rem;
+      }
+    }
+  }
+}
+
+// USP's
+
+#usp {
+  height: 450px;
+  width: 100%;
+  background: #f8f8f8;
+
+  .padd {
+    height: 80px;
+    width: 100%;
+    padding-top: 80px;
+    background-color: #fff;
+  }
+
+  .usp-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8%;
+    width: 100%;
+    padding: 1rem;
+    background: #f8f8f8;
+    position: relative;
+    bottom: 80px;
+    margin-top: 125px;
+
+    .usp-card {
+      height: 100%;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 0.75rem;
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      .usp-icon-circle {
+        height: 90px;
+        width: 90px;
+        background: #fff;
+        border-radius: 100%;
+        margin: auto;
+
+        .icon {
+          height: 60px;
+          position: relative;
+          top: 15px;
+        }
+      }
+    }
+  }
+}
+
+// Testimonials
+
+#testimonials {
+  height: 100%;
+  padding-top: 80px;
+  margin-bottom: 2rem;
+}
+
+// Buy Now
+
+#buy-now {
+  padding-top: 80px;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 80px;
+
+  .btn {
+    margin-top: 2rem;
+  }
+
+  .large-line {
+    left: 90px;
+    width: 100px;
+  }
+
+  .small-line {
+    left: 90px;
+    width: 80px;
+  }
+
+  .buy-now-container {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &-a {
+      padding-right: 2rem;
+      width: 50%;
+
+      img {
+        max-width: 500px;
+      }
+    }
+
+    &-b {
+      padding-left: 2rem;
+
+      p {
+        padding-top: 15%;
+        margin: 0 15%;
+        line-height: 1.8;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  background: #62c29f;
+  height: 180px;
+  padding-top: 2rem;
+  width: 100%;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 65px;
+  }
+
+  h3,
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+  .fab {
+    color: #fff;
+    padding-right: 1rem;
+
+    a {
+      padding: 1rem;
+    }
+  }
+}
+
+.tothetop {
+  height: 50px;
+  width: 50px;
+  background: lightblue;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  .fas {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 18px;
+  }
+}
+
+// Partials
+
+@import "mobile";
+@import "carousel";
+@import "tablet";
